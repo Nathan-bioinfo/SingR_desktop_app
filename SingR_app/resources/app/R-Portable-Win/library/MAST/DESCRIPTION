@@ -1,0 +1,50 @@
+Package: MAST
+Type: Package
+Title: Model-based Analysis of Single Cell Transcriptomics
+Version: 1.22.0
+Date: 2021-12-15
+Authors@R: c(person("Andrew", "McDavid", email = "Andrew_McDavid@urmc.rochester.edu", role = c("aut", "cre")),
+            person("Greg", "Finak", email="gfinak@fredhutch.org", role='aut'),
+            person("Masanao", "Yajima", email="myajima@fredhutch.org", role='aut'))
+VignetteBuilder: knitr
+Imports: Biobase, BiocGenerics, S4Vectors, data.table, ggplot2, plyr,
+        stringr, abind, methods, parallel, reshape2, stats, stats4,
+        graphics, utils, SummarizedExperiment(>= 1.5.3), progress
+Depends: SingleCellExperiment (>= 1.2.0), R(>= 3.5)
+Suggests: knitr, rmarkdown, testthat, lme4(>= 1.0), blme, roxygen2(>
+        6.0.0), numDeriv, car, gdata, lattice, GGally, GSEABase, NMF,
+        TxDb.Hsapiens.UCSC.hg19.knownGene, rsvd, limma, RColorBrewer,
+        BiocStyle, scater, DelayedArray, Matrix, HDF5Array, zinbwave,
+        dplyr
+Description: Methods and models for handling zero-inflated single cell
+    assay data.
+License: GPL(>= 2)
+Collate: 'AllGenerics.R' 'AllClasses.R' 'CovFromBoots.R'
+        'Fluidigm-methods.R' 'GSEA-by-boot.R' 'Hypothesis.R'
+        'LmWrapper.R' 'MAST-package.R' 'MultidimensionalScaling.R'
+        'RNASeqAssay-methods.R' 'Readers.R' 'SingleCellAssay-methods.R'
+        'UtilityFunctions.R' 'ZlmFit-bootstrap.R' 'ZlmFit-logFC.R'
+        'ZlmFit.R' 'bayesglm.R' 'convertMASTClassic.R'
+        'ebayes-helpers.R' 'filterEval.R' 'helper-methods.R'
+        'lmWrapper-bayesglm.R' 'lmWrapper-glm.R' 'lmWrapper-glmer.R'
+        'lmWrapper-ridge.R' 'lrtest.R' 'predict.R' 'stat_ell.R'
+        'thresholdSCRNA.R' 'zeroinf.R' 'zlmHooks.R'
+RoxygenNote: 7.1.2
+LazyData: true
+biocViews: GeneExpression, DifferentialExpression, GeneSetEnrichment,
+        RNASeq, Transcriptomics, SingleCell
+BugReports: https://github.com/RGLab/MAST/issues
+URL: https://github.com/RGLab/MAST/
+Encoding: UTF-8
+git_url: https://git.bioconductor.org/packages/MAST
+git_branch: RELEASE_3_15
+git_last_commit: d9fd0c9
+git_last_commit_date: 2022-04-26
+Date/Publication: 2022-04-26
+NeedsCompilation: no
+Packaged: 2022-04-26 23:36:30 UTC; biocbuild
+Author: Andrew McDavid [aut, cre],
+  Greg Finak [aut],
+  Masanao Yajima [aut]
+Maintainer: Andrew McDavid <Andrew_McDavid@urmc.rochester.edu>
+Built: R 4.2.0; ; 2022-04-27 09:41:26 UTC; windows

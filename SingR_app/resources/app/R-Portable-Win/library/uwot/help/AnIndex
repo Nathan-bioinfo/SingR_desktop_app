@@ -1,0 +1,7 @@
+load_uwot	load_uwot
+lvish	lvish
+save_uwot	save_uwot
+tumap	tumap
+umap	umap
+umap_transform	umap_transform
+unload_uwot	unload_uwot

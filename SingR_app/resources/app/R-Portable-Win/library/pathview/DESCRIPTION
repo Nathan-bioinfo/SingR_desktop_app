@@ -1,0 +1,35 @@
+Package: pathview
+Type: Package
+Title: a tool set for pathway based data integration and visualization
+Version: 1.36.0
+Date: 2021-01-29
+Author: Weijun Luo
+Maintainer: Weijun Luo <luo_weijun@yahoo.com>
+Description: Pathview is a tool set for pathway based data integration
+        and visualization. It maps and renders a wide variety of
+        biological data on relevant pathway graphs. All users need is
+        to supply their data and specify the target pathway. Pathview
+        automatically downloads the pathway graph data, parses the data
+        file, maps user data to the pathway, and render pathway graph
+        with the mapped data. In addition, Pathview also seamlessly
+        integrates with pathway and gene set (enrichment) analysis tools for
+        large-scale and fully automated analysis.
+biocViews: Pathways, GraphAndNetwork, Visualization, GeneSetEnrichment,
+        DifferentialExpression, GeneExpression, Microarray, RNASeq,
+        Genetics, Metabolomics, Proteomics, SystemsBiology, Sequencing
+Depends: R (>= 3.5.0)
+Imports: KEGGgraph, XML, Rgraphviz, graph, png, AnnotationDbi,
+        org.Hs.eg.db, KEGGREST, methods, utils
+Suggests: gage, org.Mm.eg.db, RUnit, BiocGenerics
+License: GPL (>=3.0)
+URL: https://github.com/datapplab/pathview, https://pathview.uncc.edu/
+LazyLoad: yes
+LazyData: yes
+git_url: https://git.bioconductor.org/packages/pathview
+git_branch: RELEASE_3_15
+git_last_commit: 4f6be09
+git_last_commit_date: 2022-04-26
+Date/Publication: 2022-04-26
+NeedsCompilation: no
+Packaged: 2022-04-27 00:17:10 UTC; biocbuild
+Built: R 4.2.0; ; 2022-04-27 09:52:19 UTC; windows

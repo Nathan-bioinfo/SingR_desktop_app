@@ -1,0 +1,75 @@
+KEGGEdge-class          Class 'KEGGEdge'
+KEGGEdgeSubType-class   Class "KEGGEdgeSubType"
+KEGGEdgeSubtype         KEGG edge subtypes
+KEGGEdgeType            KEGG edge types
+KEGGGraphics-class      class 'KEGGGraphics'
+KEGGGroup-class         Class "KEGGGroup"
+KEGGNode-class          Class "KEGGNode"
+KEGGNodeType            KEGG node types
+KEGGPATHID2NAME         KEGG pathway identifier to name
+KEGGPathway-class       Class "KEGGPathway"
+KEGGPathwayInfo-class   Class "KEGGPathwayInfo"
+KEGGReaction-class      Class "KEGGReaction"
+KEGGpathway2Graph       Parses KEGGpathway to graph
+KEGGpathway2reactionGraph
+                        Convert chemical reaction network of KEGG
+                        pathway into graph
+expandKEGGNode          Expand KEGG node of paralogues
+expandKEGGPathway       Expand KEGG Pathway
+getDisplayName-methods
+                        Get a character string as label for display
+getEntryID-methods      Get entry ID for single or list of KEGGNode or
+                        KEGGedge object(s)
+getKEGGID-methods       Get KEGG ID
+getKEGGgeneLink-methods
+                        Get KEGG gene link
+getKEGGnodeData         Get or set list of KEGG node or edge data
+getKGMLurl              Get KGML file (url) with KEGG PATHWAY ID and
+                        (optional) organism
+getName-methods         Get 'name' attribute
+getNamedElement         Extract the value in a vector by name
+getPathwayInfo-methods
+                        Get KEGG pathway info
+getReactions-methods    Get KEGG reactions
+getRgraphvizEdgeNames   Get Rgraphviz compatitable edge names
+getSubtype-methods      Get subtype
+getTitle-methods        Get title for given element
+getType-methods         Get type attribute
+getValue-methods        Get 'value' attribute
+graphDensity            Graph density
+isHomoList              Determines whether a list is homogenous
+kgmlFileName2PathwayName
+                        Convert KGML file name to pathway name
+mergeGraphs             A function to merge KEGG graphs
+mergeKEGGgraphs         Merge KEGG graphs, also merging KEGGNode and
+                        KEGGEdge attributes
+neighborhood            Return the neighborhood set of given vertices
+parseEntry              Parse ENTRY elements of KGML document
+parseGraphics           Parse 'graphics' elements in KGML files
+parseKGML               KGML file parser
+parseKGML2DataFrame     Parse KGML file into a data frame
+parseKGML2Graph         Parse KGML files into KEGG graph
+parseKGMLexpandMaps     A convenient function to parse KGML and expand
+                        its containing maps into one graph object
+parsePathwayInfo        Parse information of the pathway from KGML
+                        files
+parseReaction           Parse reaction from KGML files
+parseRelation           Parse RELATION elements from KGML files
+parseSubType            Parse KGML relation subtype
+plotKEGGgraph           Plot KEGG graph with Rgraphviz
+pvalue2asterisk         Return common significance sign (asterisk)
+                        associated with given p value
+queryKEGGsubgraph       Query the subgraph of a given KEGG graph with
+                        Entrez GeneID (s)
+randomSubGraph          Randomly subset the given graph
+splitKEGGgroup          Split KEGG group
+subGraphByNodeType      Subset KEGG graph by node types
+subKEGGgraph            Subset KEGG graph, including subsetting node
+                        and edge attributes
+subtypeDisplay-methods
+                        Get display information for relation subtypes
+top                     Colorectal cancer dataset
+translateKEGGID2GeneID
+                        Translate between KEGGID and Entrez Gene ID
+translateKEGGgraph      Tranlate the KEGG graph from being indexed by
+                        KEGGID to another identifer

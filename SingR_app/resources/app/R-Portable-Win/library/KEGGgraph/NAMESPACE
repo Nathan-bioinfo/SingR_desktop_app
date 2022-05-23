@@ -1,0 +1,99 @@
+import(methods)
+
+importClassesFrom(graph, graph)
+
+importFrom(utils,"download.file") 
+importFrom(XML,
+           "xmlAttrs", "xmlChildren", "xmlName",
+           "xmlRoot", "xmlTreeParse", "xmlErrorCumulator")
+importFrom("graphics", "par", "segments", "text")
+importFrom("utils", "data")
+
+importMethodsFrom(graph, ugraph)
+importFrom(graph, "edges", "nodes<-", "nodes", "edgeData","nodeData",
+           nodeDataDefaults, edgeDataDefaults,
+           "nodeDataDefaults<-", "edgeDataDefaults<-",
+           numEdges, numNodes, plot, subGraph, inEdges,
+           addNode, ftM2graphNEL,
+           "nodeRenderInfo<-", "edgeRenderInfo<-")
+importFrom(RCurl, url.exists)
+importFrom("Rgraphviz", "layoutGraph", "renderGraph")
+
+## exports
+
+export(subGraph,
+       nodes, edges,
+       edgeData, nodeData,
+       ugraph, numEdges, numNodes, plot, subGraph,
+       inEdges,
+       "nodes<-")
+       
+exportMethods("getDisplayName",
+              "getEntryID",
+              "getKEGGID",
+              "getKEGGgeneLink",
+              "getType",
+              "getName",
+              "getSubtype",
+              "getValue",
+              "getTitle",
+              "getComponent",
+              "getPathwayInfo",
+              "getReactions",
+              "getKEGGgeneLink",
+              "subtypeDisplay",
+              "getSubstrate",
+              "getProduct",
+              "show")
+
+export(translateKEGGID2GeneID,
+       translateGeneID2KEGGID,
+       translateKEGGgraph)
+
+export(graphDensity,
+       mergeGraphs,
+       mergeKEGGgraphs,
+       randomSubGraph,
+       subKEGGgraph,
+       subGraphByNodeType,
+       getRgraphvizEdgeNames,
+       getKEGGnodeData,
+       getKEGGedgeData,
+       neighborhood,
+       queryKEGGsubgraph)
+
+export(getKGMLurl,
+       retrieveKGML,
+       kgmlFileName2PathwayName,
+       parseKGML,
+       KEGGpathway2Graph,
+       parseKGML2Graph,
+       KEGGpathway2reactionGraph,
+       parseKGML2DataFrame,
+       parseKGMLexpandMaps,
+       splitKEGGgroup,
+       expandKEGGPathway)
+
+export(parsePathwayInfo,
+       parseEntry,
+       parseRelation,
+       parseReaction,
+       getEntryID)
+
+export(pvalue2asterisk,
+       getNamedElement,
+       isHomoList,
+       plotKEGGgraph,
+       KEGGgraphLegend)
+
+exportClasses("KEGGEdge",
+              "KEGGGroup",
+              "KEGGNode",
+              "KEGGPathwayInfo",
+              "KEGGReaction",
+              "KEGGEdgeSubType",
+              "KEGGGraphics",
+              "KEGGPathway",
+              "KEGGPathwayInfo")
+
+##export("KEGGEdgeSubtype")

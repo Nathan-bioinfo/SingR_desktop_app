@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html>
+<head><title>R: KEGGgraph: A graph approach to KEGG PATHWAY in R and
+Bioconductor</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+<h1> KEGGgraph: A graph approach to KEGG PATHWAY in R and
+Bioconductor
+<img class="toplogo" src="../../../doc/html/Rlogo.svg" alt="[R logo]" />
+</h1>
+<hr/>
+<div style="text-align: center;">
+<a href="../../../doc/html/packages.html"><img class="arrow" src="../../../doc/html/left.jpg" alt="[Up]" /></a>
+<a href="../../../doc/html/index.html"><img class="arrow" src="../../../doc/html/up.jpg" alt="[Top]" /></a>
+</div><h2>Documentation for package &lsquo;KEGGgraph&rsquo; version 1.56.0</h2>
+
+<ul><li><a href="../DESCRIPTION">DESCRIPTION file</a>.</li>
+<li><a href="../doc/index.html">User guides, package vignettes and other documentation.</a></li>
+<li><a href="../NEWS">Package NEWS</a>.</li>
+</ul>
+
+<h2>Help Pages</h2>
+
+
+<p style="text-align: center;">
+<a href="#E">E</a>
+<a href="#G">G</a>
+<a href="#I">I</a>
+<a href="#K">K</a>
+<a href="#M">M</a>
+<a href="#N">N</a>
+<a href="#P">P</a>
+<a href="#Q">Q</a>
+<a href="#R">R</a>
+<a href="#S">S</a>
+<a href="#T">T</a>
+</p>
+
+
+<h2><a name="E">-- E --</a></h2>
+
+<table width="100%">
+<tr><td style="width: 25%;"><a href="KEGGPathway-class.html">edges-method</a></td>
+<td>Class "KEGGPathway"</td></tr>
+<tr><td style="width: 25%;"><a href="KEGGPathway-class.html">edges&lt;-</a></td>
+<td>Class "KEGGPathway"</td></tr>
+<tr><td style="width: 25%;"><a href="KEGGPathway-class.html">edges&lt;--method</a></td>
+<td>Class "KEGGPathway"</td></tr>
+<tr><td style="width: 25%;"><a href="KEGGNode-class.html">entryID&lt;-</a></td>
+<td>Class "KEGGNode"</td></tr>
+<tr><td style="width: 25%;"><a href="KEGGEdge-class.html">entryID&lt;--method</a></td>
+<td>Class 'KEGGEdge'</td></tr>
+<tr><td style="width: 25%;"><a href="KEGGNode-class.html">entryID&lt;--method</a></td>
+<td>Class "KEGGNode"</td></tr>
+<tr><td style="width: 25%;"><a href="expandKEGGNode.html">expandKEGGNode</a></td>
+<td>Expand KEGG node of paralogues</td></tr>
+<tr><td style="width: 25%;"><a href="expandKEGGPathway.html">expandKEGGPathway</a></td>
+<td>Expand KEGG Pathway</td></tr>
+</table>
+
+<h2><a name="G">-- G --</a></h2>
+
+<table width="100%">
+<tr><td style="width: 25%;"><a href="getKGMLurl.html">getCategoryIndepKGMLurl</a></td>
+<td>Get KGML file (url) with KEGG PATHWAY ID and (optional) organism</td></tr>
+<tr><td style="width: 25%;"><a href="KEGGGroup-class.html">getComponent</a></td>
+<td>Class "KEGGGroup"</td></tr>
+<tr><td style="width: 25%;"><a href="KEGGGroup-class.html">getComponent-method</a></td>
+<td>Class "KEGGGroup"</td></tr>
+<tr><td style="width: 25%;"><a href="KEGGNode-class.html">getComponent-method</a></td>
+<td>Class "KEGGNode"</td></tr>
+<tr><td style="width: 25%;"><a href="getDisplayName-methods.html">getDisplayName</a></td>
+<td>Get a character string as label for display</td></tr>
+<tr><td style="width: 25%;"><a href="getDisplayName-methods.html">getDisplayName-method</a></td>
+<td>Get a character string as label for display</td></tr>
+<tr><td style="width: 25%;"><a href="getDisplayName-methods.html">getDisplayName-methods</a></td>
+<td>Get a character string as label for display</td></tr>
+<tr><td style="width: 25%;"><a href="getEntryID-methods.html">getEntryID</a></td>
+<td>Get entry ID for single or list of KEGGNode or KEGGedge object(s)</td></tr>
+<tr><td style="width: 25%;"><a href="getEntryID-methods.html">getEntryID-method</a></td>
+<td>Get entry ID for single or list of KEGGNode or KEGGedge object(s)</td></tr>
+<tr><td style="width: 25%;"><a href="getEntryID-methods.html">getEntryID-methods</a></td>
+<td>Get entry ID for single or list of KEGGNode or KEGGedge object(s)</td></tr>
+<tr><td style="width: 25%;"><a href="getKEGGnodeData.html">getKEGGedgeData</a></td>
+<td>Get or set list of KEGG node or edge data</td></tr>
+<tr><td style="width: 25%;"><a href="getKEGGgeneLink-methods.html">getKEGGgeneLink</a></td>
+<td>Get KEGG gene link</td></tr>
+<tr><td style="width: 25%;"><a href="getKEGGgeneLink-methods.html">getKEGGgeneLink-method</a></td>
+<td>Get KEGG gene link</td></tr>
+<tr><td style="width: 25%;"><a href="getKEGGgeneLink-methods.html">getKEGGgeneLink-methods</a></td>
+<td>Get KEGG gene link</td></tr>
+<tr><td style="width: 25%;"><a href="getKEGGID-methods.html">getKEGGID</a></td>
+<td>Get KEGG ID</td></tr>
+<tr><td style="width: 25%;"><a href="getKEGGID-methods.html">getKEGGID-method</a></td>
+<td>Get KEGG ID</td></tr>
+<tr><td style="width: 25%;"><a href="getKEGGID-methods.html">getKEGGID-methods</a></td>
+<td>Get KEGG ID</td></tr>
+<tr><td style="width: 25%;"><a href="getKEGGnodeData.html">getKEGGnodeData</a></td>
+<td>Get or set list of KEGG node or edge data</td></tr>
+<tr><td style="width: 25%;"><a href="getKGMLurl.html">getKGMLurl</a></td>
+<td>Get KGML file (url) with KEGG PATHWAY ID and (optional) organism</td></tr>
+<tr><td style="width: 25%;"><a href="getName-methods.html">getName</a></td>
+<td>Get 'name' attribute</td></tr>
+<tr><td style="width: 25%;"><a href="KEGGEdge-class.html">getName-method</a></td>
+<td>Class 'KEGGEdge'</td></tr>
+<tr><td style="width: 25%;"><a href="KEGGEdgeSubType-class.html">getName-method</a></td>
+<td>Class "KEGGEdgeSubType"</td></tr>
+<tr><td style="width: 25%;"><a href="KEGGPathway-class.html">getName-method</a></td>
+<td>Class "KEGGPathway"</td></tr>
+<tr><td style="width: 25%;"><a href="KEGGReaction-class.html">getName-method</a></td>
+<td>Class "KEGGReaction"</td></tr>
+<tr><td style="width: 25%;"><a href="getName-methods.html">getName-method</a></td>
+<td>Get 'name' attribute</td></tr>
+<tr><td style="width: 25%;"><a href="getName-methods.html">getName-methods</a></td>
+<td>Get 'name' attribute</td></tr>
+<tr><td style="width: 25%;"><a href="getNamedElement.html">getNamedElement</a></td>
+<td>Extract the value in a vector by name</td></tr>
+<tr><td style="width: 25%;"><a href="getPathwayInfo-methods.html">getPathwayInfo</a></td>
+<td>Get KEGG pathway info</td></tr>
+<tr><td style="width: 25%;"><a href="getPathwayInfo-methods.html">getPathwayInfo-method</a></td>
+<td>Get KEGG pathway info</td></tr>
+<tr><td style="width: 25%;"><a href="getPathwayInfo-methods.html">getPathwayInfo-methods</a></td>
+<td>Get KEGG pathway info</td></tr>
+<tr><td style="width: 25%;"><a href="KEGGReaction-class.html">getProduct</a></td>
+<td>Class "KEGGReaction"</td></tr>
+<tr><td style="width: 25%;"><a href="KEGGReaction-class.html">getProduct-method</a></td>
+<td>Class "KEGGReaction"</td></tr>
+<tr><td style="width: 25%;"><a href="getReactions-methods.html">getReactions</a></td>
+<td>Get KEGG reactions</td></tr>
+<tr><td style="width: 25%;"><a href="getReactions-methods.html">getReactions-method</a></td>
+<td>Get KEGG reactions</td></tr>
+<tr><td style="width: 25%;"><a href="getReactions-methods.html">getReactions-methods</a></td>
+<td>Get KEGG reactions</td></tr>
+<tr><td style="width: 25%;"><a href="getRgraphvizEdgeNames.html">getRgraphvizEdgeNames</a></td>
+<td>Get Rgraphviz compatitable edge names</td></tr>
+<tr><td style="width: 25%;"><a href="KEGGReaction-class.html">getSubstrate</a></td>
+<td>Class "KEGGReaction"</td></tr>
+<tr><td style="width: 25%;"><a href="KEGGReaction-class.html">getSubstrate-method</a></td>
+<td>Class "KEGGReaction"</td></tr>
+<tr><td style="width: 25%;"><a href="getSubtype-methods.html">getSubtype</a></td>
+<td>Get subtype</td></tr>
+<tr><td style="width: 25%;"><a href="getSubtype-methods.html">getSubtype-method</a></td>
+<td>Get subtype</td></tr>
+<tr><td style="width: 25%;"><a href="getSubtype-methods.html">getSubtype-methods</a></td>
+<td>Get subtype</td></tr>
+<tr><td style="width: 25%;"><a href="getTitle-methods.html">getTitle</a></td>
+<td>Get title for given element</td></tr>
+<tr><td style="width: 25%;"><a href="KEGGPathway-class.html">getTitle-method</a></td>
+<td>Class "KEGGPathway"</td></tr>
+<tr><td style="width: 25%;"><a href="KEGGPathwayInfo-class.html">getTitle-method</a></td>
+<td>Class "KEGGPathwayInfo"</td></tr>
+<tr><td style="width: 25%;"><a href="getTitle-methods.html">getTitle-methods</a></td>
+<td>Get title for given element</td></tr>
+<tr><td style="width: 25%;"><a href="getType-methods.html">getType</a></td>
+<td>Get type attribute</td></tr>
+<tr><td style="width: 25%;"><a href="getType-methods.html">getType-method</a></td>
+<td>Get type attribute</td></tr>
+<tr><td style="width: 25%;"><a href="getType-methods.html">getType-methods</a></td>
+<td>Get type attribute</td></tr>
+<tr><td style="width: 25%;"><a href="getValue-methods.html">getValue</a></td>
+<td>Get 'value' attribute</td></tr>
+<tr><td style="width: 25%;"><a href="KEGGEdgeSubType-class.html">getValue-method</a></td>
+<td>Class "KEGGEdgeSubType"</td></tr>
+<tr><td style="width: 25%;"><a href="getValue-methods.html">getValue-method</a></td>
+<td>Get 'value' attribute</td></tr>
+<tr><td style="width: 25%;"><a href="getValue-methods.html">getValue-methods</a></td>
+<td>Get 'value' attribute</td></tr>
+<tr><td style="width: 25%;"><a href="graphDensity.html">graphDensity</a></td>
+<td>Graph density</td></tr>
+</table>
+
+<h2><a name="I">-- I --</a></h2>
+
+<table width="100%">
+<tr><td style="width: 25%;"><a href="isHomoList.html">isHomoList</a></td>
+<td>Determines whether a list is homogenous</td></tr>
+</table>
+
+<h2><a name="K">-- K --</a></h2>
+
+<table width="100%">
+<tr><td style="width: 25%;"><a href="KEGGEdge-class.html">KEGGEdge-class</a></td>
+<td>Class 'KEGGEdge'</td></tr>
+<tr><td style="width: 25%;"><a href="KEGGEdgeSubtype.html">KEGGEdgeSubtype</a></td>
+<td>KEGG edge subtypes</td></tr>
+<tr><td style="width: 25%;"><a href="KEGGEdgeSubType-class.html">KEGGEdgeSubType-class</a></td>
+<td>Class "KEGGEdgeSubType"</td></tr>
+<tr><td style="width: 25%;"><a href="KEGGEdgeType.html">KEGGEdgeType</a></td>
+<td>KEGG edge types</td></tr>
+<tr><td style="width: 25%;"><a href="KEGGGraphics-class.html">KEGGGraphics-class</a></td>
+<td>class 'KEGGGraphics'</td></tr>
+<tr><td style="width: 25%;"><a href="plotKEGGgraph.html">KEGGgraphLegend</a></td>
+<td>Plot KEGG graph with Rgraphviz</td></tr>
+<tr><td style="width: 25%;"><a href="KEGGGroup-class.html">KEGGGroup-class</a></td>
+<td>Class "KEGGGroup"</td></tr>
+<tr><td style="width: 25%;"><a href="KEGGNode-class.html">KEGGNode-class</a></td>
+<td>Class "KEGGNode"</td></tr>
+<tr><td style="width: 25%;"><a href="KEGGNodeType.html">KEGGNodeType</a></td>
+<td>KEGG node types</td></tr>
+<tr><td style="width: 25%;"><a href="KEGGPATHID2NAME.html">KEGGPATHID2NAME</a></td>
+<td>KEGG pathway identifier to name</td></tr>
+<tr><td style="width: 25%;"><a href="KEGGPathway-class.html">KEGGPathway-class</a></td>
+<td>Class "KEGGPathway"</td></tr>
+<tr><td style="width: 25%;"><a href="KEGGpathway2Graph.html">KEGGpathway2Graph</a></td>
+<td>Parses KEGGpathway to graph</td></tr>
+<tr><td style="width: 25%;"><a href="KEGGpathway2reactionGraph.html">KEGGpathway2reactionGraph</a></td>
+<td>Convert chemical reaction network of KEGG pathway into graph</td></tr>
+<tr><td style="width: 25%;"><a href="KEGGPathwayInfo-class.html">KEGGPathwayInfo-class</a></td>
+<td>Class "KEGGPathwayInfo"</td></tr>
+<tr><td style="width: 25%;"><a href="KEGGReaction-class.html">KEGGReaction-class</a></td>
+<td>Class "KEGGReaction"</td></tr>
+<tr><td style="width: 25%;"><a href="kgmlFileName2PathwayName.html">kgmlFileName2PathwayName</a></td>
+<td>Convert KGML file name to pathway name</td></tr>
+<tr><td style="width: 25%;"><a href="getKGMLurl.html">kgmlNonmetabolicName2MetabolicName</a></td>
+<td>Get KGML file (url) with KEGG PATHWAY ID and (optional) organism</td></tr>
+</table>
+
+<h2><a name="M">-- M --</a></h2>
+
+<table width="100%">
+<tr><td style="width: 25%;"><a href="mergeGraphs.html">mergeGraphs</a></td>
+<td>A function to merge KEGG graphs</td></tr>
+<tr><td style="width: 25%;"><a href="mergeKEGGgraphs.html">mergeKEGGgraphs</a></td>
+<td>Merge KEGG graphs, also merging KEGGNode and KEGGEdge attributes</td></tr>
+</table>
+
+<h2><a name="N">-- N --</a></h2>
+
+<table width="100%">
+<tr><td style="width: 25%;"><a href="KEGGNode-class.html">name&lt;-</a></td>
+<td>Class "KEGGNode"</td></tr>
+<tr><td style="width: 25%;"><a href="KEGGNode-class.html">name&lt;--method</a></td>
+<td>Class "KEGGNode"</td></tr>
+<tr><td style="width: 25%;"><a href="neighborhood.html">neighborhood</a></td>
+<td>Return the neighborhood set of given vertices</td></tr>
+<tr><td style="width: 25%;"><a href="KEGGPathway-class.html">nodes-method</a></td>
+<td>Class "KEGGPathway"</td></tr>
+<tr><td style="width: 25%;"><a href="KEGGPathway-class.html">nodes&lt;--method</a></td>
+<td>Class "KEGGPathway"</td></tr>
+</table>
+
+<h2><a name="P">-- P --</a></h2>
+
+<table width="100%">
+<tr><td style="width: 25%;"><a href="parseEntry.html">parseEntry</a></td>
+<td>Parse ENTRY elements of KGML document</td></tr>
+<tr><td style="width: 25%;"><a href="parseGraphics.html">parseGraphics</a></td>
+<td>Parse 'graphics' elements in KGML files</td></tr>
+<tr><td style="width: 25%;"><a href="parseKGML.html">parseKGML</a></td>
+<td>KGML file parser</td></tr>
+<tr><td style="width: 25%;"><a href="parseKGML2DataFrame.html">parseKGML2DataFrame</a></td>
+<td>Parse KGML file into a data frame</td></tr>
+<tr><td style="width: 25%;"><a href="parseKGML2Graph.html">parseKGML2Graph</a></td>
+<td>Parse KGML files into KEGG graph</td></tr>
+<tr><td style="width: 25%;"><a href="parseKGMLexpandMaps.html">parseKGMLexpandMaps</a></td>
+<td>A convenient function to parse KGML and expand its containing maps into one graph object</td></tr>
+<tr><td style="width: 25%;"><a href="parsePathwayInfo.html">parsePathwayInfo</a></td>
+<td>Parse information of the pathway from KGML files</td></tr>
+<tr><td style="width: 25%;"><a href="parseReaction.html">parseReaction</a></td>
+<td>Parse reaction from KGML files</td></tr>
+<tr><td style="width: 25%;"><a href="parseRelation.html">parseRelation</a></td>
+<td>Parse RELATION elements from KGML files</td></tr>
+<tr><td style="width: 25%;"><a href="parseSubType.html">parseSubType</a></td>
+<td>Parse KGML relation subtype</td></tr>
+<tr><td style="width: 25%;"><a href="plotKEGGgraph.html">plotKEGGgraph</a></td>
+<td>Plot KEGG graph with Rgraphviz</td></tr>
+<tr><td style="width: 25%;"><a href="pvalue2asterisk.html">pvalue2asterisk</a></td>
+<td>Return common significance sign (asterisk) associated with given p value</td></tr>
+</table>
+
+<h2><a name="Q">-- Q --</a></h2>
+
+<table width="100%">
+<tr><td style="width: 25%;"><a href="queryKEGGsubgraph.html">queryKEGGsubgraph</a></td>
+<td>Query the subgraph of a given KEGG graph with Entrez GeneID (s)</td></tr>
+</table>
+
+<h2><a name="R">-- R --</a></h2>
+
+<table width="100%">
+<tr><td style="width: 25%;"><a href="randomSubGraph.html">randomSubGraph</a></td>
+<td>Randomly subset the given graph</td></tr>
+<tr><td style="width: 25%;"><a href="getKGMLurl.html">retrieveKGML</a></td>
+<td>Get KGML file (url) with KEGG PATHWAY ID and (optional) organism</td></tr>
+</table>
+
+<h2><a name="S">-- S --</a></h2>
+
+<table width="100%">
+<tr><td style="width: 25%;"><a href="getKEGGnodeData.html">setKEGGedgeData</a></td>
+<td>Get or set list of KEGG node or edge data</td></tr>
+<tr><td style="width: 25%;"><a href="getKEGGnodeData.html">setKEGGnodeData</a></td>
+<td>Get or set list of KEGG node or edge data</td></tr>
+<tr><td style="width: 25%;"><a href="KEGGEdge-class.html">show-method</a></td>
+<td>Class 'KEGGEdge'</td></tr>
+<tr><td style="width: 25%;"><a href="KEGGEdgeSubType-class.html">show-method</a></td>
+<td>Class "KEGGEdgeSubType"</td></tr>
+<tr><td style="width: 25%;"><a href="KEGGNode-class.html">show-method</a></td>
+<td>Class "KEGGNode"</td></tr>
+<tr><td style="width: 25%;"><a href="KEGGPathway-class.html">show-method</a></td>
+<td>Class "KEGGPathway"</td></tr>
+<tr><td style="width: 25%;"><a href="KEGGPathwayInfo-class.html">show-method</a></td>
+<td>Class "KEGGPathwayInfo"</td></tr>
+<tr><td style="width: 25%;"><a href="KEGGReaction-class.html">show-method</a></td>
+<td>Class "KEGGReaction"</td></tr>
+<tr><td style="width: 25%;"><a href="splitKEGGgroup.html">splitKEGGgroup</a></td>
+<td>Split KEGG group</td></tr>
+<tr><td style="width: 25%;"><a href="subGraphByNodeType.html">subGraphByNodeType</a></td>
+<td>Subset KEGG graph by node types</td></tr>
+<tr><td style="width: 25%;"><a href="subKEGGgraph.html">subKEGGgraph</a></td>
+<td>Subset KEGG graph, including subsetting node and edge attributes</td></tr>
+<tr><td style="width: 25%;"><a href="subtypeDisplay-methods.html">subtypeDisplay</a></td>
+<td>Get display information for relation subtypes</td></tr>
+<tr><td style="width: 25%;"><a href="subtypeDisplay-methods.html">subtypeDisplay-method</a></td>
+<td>Get display information for relation subtypes</td></tr>
+<tr><td style="width: 25%;"><a href="subtypeDisplay-methods.html">subtypeDisplay-methods</a></td>
+<td>Get display information for relation subtypes</td></tr>
+</table>
+
+<h2><a name="T">-- T --</a></h2>
+
+<table width="100%">
+<tr><td style="width: 25%;"><a href="top.html">top</a></td>
+<td>Colorectal cancer dataset</td></tr>
+<tr><td style="width: 25%;"><a href="translateKEGGID2GeneID.html">translateGeneID2KEGGID</a></td>
+<td>Translate between KEGGID and Entrez Gene ID</td></tr>
+<tr><td style="width: 25%;"><a href="translateKEGGID2GeneID.html">translateKEGG2GeneID</a></td>
+<td>Translate between KEGGID and Entrez Gene ID</td></tr>
+<tr><td style="width: 25%;"><a href="translateKEGGgraph.html">translateKEGGgraph</a></td>
+<td>Tranlate the KEGG graph from being indexed by KEGGID to another identifer</td></tr>
+<tr><td style="width: 25%;"><a href="translateKEGGID2GeneID.html">translateKEGGID2GeneID</a></td>
+<td>Translate between KEGGID and Entrez Gene ID</td></tr>
+</table>
+</div></body></html>

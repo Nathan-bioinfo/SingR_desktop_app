@@ -1,0 +1,8 @@
+Meta filter=lfs diff=lfs merge=lfs -text
+NAMESPACE filter=lfs diff=lfs merge=lfs -text
+R filter=lfs diff=lfs merge=lfs -text
+DESCRIPTION filter=lfs diff=lfs merge=lfs -text
+extdata filter=lfs diff=lfs merge=lfs -text
+help filter=lfs diff=lfs merge=lfs -text
+html filter=lfs diff=lfs merge=lfs -text
+INDEX filter=lfs diff=lfs merge=lfs -text
