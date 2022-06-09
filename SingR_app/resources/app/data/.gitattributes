@@ -1,3 +1,0 @@
-data_example.rds filter=lfs diff=lfs merge=lfs -text
-geneset_example.csv filter=lfs diff=lfs merge=lfs -text
-geneset_h_example.RData filter=lfs diff=lfs merge=lfs -text

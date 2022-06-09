@@ -1,4 +1,0 @@
-gglist                  construct a 'gglist' object
-insert_left             plot-insertion
-plot_list               plot a list of ggplot objects
-xlim2                   xlim2
